@@ -18,17 +18,21 @@ Java
 Python
 Skype
 terminal-notifier
+skx/sysadmin-util
+the silver searcher
+tmux airline (?)
 
 ###Considering
 
-the silver searcher
-tmux airline (?)
 Quassel
 Slack
 Discord
 GIMP
 Inkscape
-[Starred stuff on GitHub}]
+[Starred stuff on GitHub]
+plasticboy/vim-markdown
+herrbischoff/awesome-osx-command-line (cherry pick)
+
 
 ###gmac specific
 
