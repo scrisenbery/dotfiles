@@ -36,10 +36,3 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-# P4 Merge Specific #
-#####################
-*.orig
-
-# IDE Files #
-#############
-.idea/
