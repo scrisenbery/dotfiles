@@ -1,3 +1,5 @@
+# //TODO This looks great but I should check into it
+
 # Setup SSH agent so you only have to enter your ssh pass phrase once
 SSH_ENV="$HOME/.ssh/environment"
 
