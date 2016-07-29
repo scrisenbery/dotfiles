@@ -1,3 +1,4 @@
+# //TODO ls alias looks good, need to look at others although they look interesting
 alias ls="ls --color"
 
 # Determine if port is in use
