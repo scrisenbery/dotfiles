@@ -1,3 +1,4 @@
+" //TODO All of this (do I even need window resizing????)
 "
 " Window resizing made easy
 " Mac settings

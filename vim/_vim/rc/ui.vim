@@ -1,3 +1,6 @@
+" //TODO Review all of this (although it looks like most if not all of this is
+" good 
+
 colorscheme wombat256mod
 
 "

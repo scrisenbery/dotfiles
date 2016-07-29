@@ -1,3 +1,5 @@
+" //TODO Review everything in here
+
 let mapleader = ','
 let g:mapleader = ','
 

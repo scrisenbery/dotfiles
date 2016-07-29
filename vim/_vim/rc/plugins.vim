@@ -1,3 +1,5 @@
+" //TODO Review Neobundle vs Vundle vs whatever and review/update/replace this
+
 " Load all the plugins automatically on startup
 
 filetype off
