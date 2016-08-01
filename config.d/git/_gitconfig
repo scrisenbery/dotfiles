@@ -1,0 +1,30 @@
+; vim: ft=gitconfig
+
+[user]
+  name = Scott Crisenbery
+  email = scott@scrisenbery.net
+
+[github]
+  user = scrisenbery
+
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore_global
+  autocrlf = input
+
+[help]
+  autocorrect=-1
+
+[push]
+  default = tracking
+
+[log]
+  date = local
+
+[alias]
+
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
