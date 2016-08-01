@@ -1,1 +1,0 @@
-pathappend "$HOME/.shellrc/bin"
