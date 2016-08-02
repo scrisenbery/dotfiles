@@ -46,6 +46,7 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
+# //TODO Depends on branch
 # Disable local Time Machine snapshots
 sudo tmutil disablelocal
 
@@ -59,6 +60,7 @@ sudo systemsetup -setcomputersleep Off > /dev/null
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
+# //TODO Review location
 # Make sure our screenshots go to some place sane
 mkdir -p $HOME/Documents/Screenshots
 defaults write com.apple.screencapture location ~/Documents/Screenshots
