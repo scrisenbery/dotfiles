@@ -1,6 +1,8 @@
 #!/bin/ bash
 # Ignore if we're not on OSX
 
+# //TODO Review, wtf is this
+
 git clone https://github.com/yyuu/pyenv.git            ~/.pyenv
 
 git clone https://github.com/tokuhirom/plenv.git       ~/.plenv
