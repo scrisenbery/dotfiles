@@ -2,7 +2,7 @@
 # Ignore if we're not on OSX
 [[ "$OSTYPE" =~ ^darwin ]] || exit 0
 
-#
+#TODO Update/Review
 # Let's store some variables so we don't do a lot of copypasta
 ALFRED_WORKFLOWS_DIR="$HOME/Library/Application Support/Alfred 2/Alfred.alfredpreferences/workflows"
 ALFRED_WORKFLOWS_GIT="https://bitbucket.org/Juxtaposedwords/alfred-workflows"
