@@ -5,6 +5,7 @@
 # Keep-alive: update existing sudo time stamp if set, otherwise do nothing.
  while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# //TODO Not sure how this ensures xcode? Will it need to be managed out of dotfiles?
 # make sure we have xcode...homebrew requires
 if test ! $(which brew); then
    echo "Installing homebrew..."
@@ -28,8 +29,6 @@ brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
 
-
-
 # Upgrade any already-installed formulae.
 brew upgrade
 
@@ -39,7 +38,7 @@ brew update
 # Let's get the latest bash
 brew install bash
 brew install bash-completion2
-
+# //TODO zsh, etc
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -109,6 +108,7 @@ brew install --HEAD node-build
 # Remove outdated versions from the cellar.
 brew cleanup
 
+# //TODO this whole damn thing
 
 LOCALBASH="/usr/local/bin/bash"
 if ! grep -q $LOCALBASH /etc/shells; then
