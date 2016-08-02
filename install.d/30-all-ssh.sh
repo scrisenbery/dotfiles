@@ -2,6 +2,8 @@
 # Ignore if we're not on OSX
 # Stolen from https://gist.github.com/iainconnor/f9d4964ea4211e794d1dj
 # Setup your primary SSH key
+
+# //TODO what
 echo "This is for your configuring your machine's primary SSH Key"
 read -e -p "Enter your ssh public key" SSH_PUB
 read -e -p "Enter your ssh private key" SSH_PRIV
