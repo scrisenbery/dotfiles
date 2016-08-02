@@ -5,6 +5,7 @@
 # Setup Git.
 read -e -p "Enter your git username: " USERNAME
 read -e -p "Enter your git email address: " EMAIL
+# //TODO what
 read -e -p "Enter your github homebrew token." GITHUB_HOMEBREW_TOKEN
 if HOMEBREW_GITHUB_API_TOKEN != ""; then
 	export HOMEBREW_GITHUB_API_TOKEN
