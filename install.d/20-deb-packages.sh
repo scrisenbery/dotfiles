@@ -4,5 +4,7 @@
 
 apt-get update
 apt-get upgrade
-apt-get install tree fail2ban vim snmpd iptables-persistent libssl-dev
-apt-get autoremove
+
+# //TODO Whenever it comes up even
+#apt-get install tree fail2ban vim snmpd iptables-persistent libssl-dev
+#apt-get autoremove
