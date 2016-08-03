@@ -1,26 +1,27 @@
 #!/bin/sh
 
-# //TODO decide fully if this is a good design decision
+# //TODO Update for issue #2
 # Make symbolic links to home folder
-link_file() {
+copy_file() {
   source="${PWD}/$1"
   target="${HOME}/${1/_/.}"
 
   if [ -e $target ] ; then
     if [ ! -d $target ] ; then
       echo "Update\t$target"
+      # //TODO This is backing up the original file if it exists. Need to store in a more specific location I think
       mv $target $target.bak
-      ln -sf ${source} ${target}
+      cp ${source} ${target}
     fi
   else
     echo "Install\t$target"
-    ln -sf ${source} ${target}
+    cp ${source} ${target}
   fi
 }
 
 for i in _*
 do
-  link_file $i
+  copy_file $i
 done
 
 # //TODO vim package manager decision 
