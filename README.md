@@ -1,5 +1,5 @@
 # dotfiles
-Personal dotfiles starting from scratch
+Personal dotfiles starting from scratch(ish)
 
 Rather than fork an existing dotfiles repo and modifying some of it to fit my own needs an preferences (as I did with scrisenbery/mac-dotfiles), I decided it was better to start from scratch so that I am only using features that I need and don't have to deal with the complexities of things when I'm not even sure what they are for. 
 
@@ -11,7 +11,7 @@ Juxtaposedwords/dotfiles
 
 ####Branches
 
-I will (likely) maintain multiple branches of this because I have multiple computers and multiple environments where some settings may need to be customized to different environments and some features may need to be removed altogether because of various resitrctions and reasonings. I will (try) to maintain a description of each branch below. While the project is intended to work on any Linux or Mac computer with no changes, my specific use cases may require smaller changes.
+I will (likely) maintain multiple branches of this because I have multiple computers and multiple environments where some settings may need to be customized to different environments and some features may need to be removed altogether because of various resitrctions and reasonings [read: because reasons]. I will (try) to maintain a description of each branch below. While the project is intended to work on any Linux or Mac computer with no changes, my specific use cases may require smaller changes.
 
 ######master
 I will use the master branch as the all-purpose version that can be installed anyhwere (theoretically).
