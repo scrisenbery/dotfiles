@@ -1,5 +1,5 @@
-NeoBundle 'mileszs/ack.vim'
-
+Plugin 'mileszs/ack.vim'
+" //TODO Check into the remapping happening here. 
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 noremap <leader>s :Ack 
