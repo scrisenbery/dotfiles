@@ -1,1 +1,1 @@
-NeoBundle 'raimondi/delimitmate'
+Plugin 'raimondi/delimitmate'
