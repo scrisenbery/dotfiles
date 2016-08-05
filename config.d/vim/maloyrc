@@ -1,5 +1,9 @@
-filetype plugin indent on " enable file type detection
+" Enable filetype detection
+filetype plugin indent on
+
 set autoindent
+
+
 "set nu " number lines
 
 set expandtab
@@ -13,10 +17,12 @@ set clipboard=unnamed
 filetype plugin on
 filetype indent on
 
+" TODO
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" TODO
 " Enable mouse if available - it works on many terminals
 if has('mouse')
   set mouse=a
@@ -28,9 +34,11 @@ set ignorecase
 " Highlight search results
 set hlsearch
 
+" TODO
 " Makes search act like search in modern browsers
 set incsearch
 
+" TODO
 " For regular expressions turn magic on
 set magic
 
@@ -40,6 +48,7 @@ syntax enable
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
+" TODO
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
@@ -47,16 +56,11 @@ set ffs=unix,dos,mac
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" TODO
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
 set nowb
 set noswapfile
-
-" Set window mappings to something I might actually remember
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
 
 
 " Return to last edit position when opening files (You want this!)
