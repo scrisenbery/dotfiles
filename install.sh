@@ -25,6 +25,7 @@ do
 done
 
 
+# //TODO wat do
 set -ev
 
 # here we go and iterate over all the shell scripts in the install.d file and run them
@@ -32,18 +33,3 @@ for file in $HOME/.dotfiles/install.d/*.sh; do
   bash $file
 done
 
-
-# //TODO vim package manager decision 
-# Vim Package Manager Install
-if [ ! -d $HOME/.vim/bundle/neobundle.vim ]
-then
-  git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-fi
-
-# Install Oh-My-ZSH
-if [ ! -d $HOME/.vim/bundle/neobundle.vim ]
-then
-  bash -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-fi
-
-# //TODO break out installs into setup
