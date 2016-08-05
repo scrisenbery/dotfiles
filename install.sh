@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # //TODO Update for issue #2
 # Make symbolic links to home folder
@@ -24,6 +24,15 @@ do
   copy_file $i
 done
 
+
+set -ev
+
+# here we go and iterate over all the shell scripts in the install.d file and run them
+for file in $HOME/.dotfiles/install.d/*.sh; do
+  bash $file
+done
+
+
 # //TODO vim package manager decision 
 # Vim Package Manager Install
 if [ ! -d $HOME/.vim/bundle/neobundle.vim ]
@@ -34,7 +43,7 @@ fi
 # Install Oh-My-ZSH
 if [ ! -d $HOME/.vim/bundle/neobundle.vim ]
 then
-  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  bash -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
 # //TODO break out installs into setup
