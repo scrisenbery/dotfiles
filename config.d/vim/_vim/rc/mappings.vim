@@ -1,12 +1,4 @@
-" //TODO All of this (do I even need window resizing????)
-"
-" Window resizing made easy
-" Mac settings
-"
-map <silent> ˙ <C-w><
-map <silent> ∆ <C-w>-
-map <silent> ˚ <C-w>+
-map <silent> ¬ <C-w>>
+" //TODO Wat do
 
 "
 " Make Y behave like C and D
