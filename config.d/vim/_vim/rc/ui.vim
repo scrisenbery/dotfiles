@@ -6,6 +6,9 @@ colorscheme wombat256mod
 "
 " User Input
 "
+"Maloy uses an if to determine if a mouse is present. I will have to check if
+"he does this in such a way that it will detect a trackpad built in. That'd be
+"the better way to go if it works. TODO
 set mouse=a                                 " Always enable mouse
 set mousehide                               " Hide when characters are typed
 set ttyfast                                 " Assume fast terminal connection
@@ -52,6 +55,7 @@ set matchtime=2
 "
 " Folds
 "
+" TODO I don't usually use this in vim
 set foldenable
 set foldmethod=syntax
 set foldlevelstart=99
