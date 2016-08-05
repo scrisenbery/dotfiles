@@ -1,1 +1,1 @@
-NeoBundle 'vim-scripts/wombat256.vim'
+Plugin 'vim-scripts/wombat256.vim'
