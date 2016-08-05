@@ -1,12 +1,5 @@
-NeoBundleLazy 'scrooloose/nerdtree', {
-  \   'autoload':{
-  \     'commands':[
-  \       'NERDTreeToggle',
-  \       'NERDTreeFind'
-  \     ]
-  \   }
-  \ }
-
+Plugin 'scrooloose/nerdtree'
+" //TODO Review customizations and settings
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=[]
 
