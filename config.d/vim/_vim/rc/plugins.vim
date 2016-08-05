@@ -1,7 +1,10 @@
 " //TODO Review Neobundle vs Vundle vs whatever and review/update/replace this
 
 " Load all the plugins automatically on startup
-
+" TODO Maloy does the opposite here. I suspect the difference is that Matt
+" could lazy load via NeoBundle but I doubt Vundle has that so I suspect
+" Maloy's approach is the correct one here. I will have to check. Loading all
+" plugins on start is not necessarily ideal
 filetype off
 filetype plugin indent off
 
