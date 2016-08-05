@@ -1,1 +1,1 @@
-NeoBundle 'ervandew/supertab'
+Plugin 'ervandew/supertab'
