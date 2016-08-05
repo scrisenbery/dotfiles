@@ -1,9 +1,1 @@
-NeoBundleLazy 'gregsexton/MatchTag', {
-  \   'autoload':{
-  \     'filetypes':[
-  \       'html',
-  \       'xml',
-  \       'javascript'
-  \     ]
-  \   }
-  \ }
+Plugin 'gregsexton/MatchTag'
