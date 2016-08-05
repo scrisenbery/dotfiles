@@ -1,17 +1,16 @@
 " Enable filetype detection
 filetype plugin indent on
 
+" TODO This may be managed by a plugin
 set autoindent
 
 
-"set nu " number lines
-
+" TODO This may be managed by a plugin
 set expandtab
 set smarttab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set clipboard=unnamed
 
 " Enable filetype plugins
 filetype plugin on
@@ -28,30 +27,16 @@ if has('mouse')
   set mouse=a
 endif
 
-" Ignore case when searching
-set ignorecase
-
-" Highlight search results
-set hlsearch
-
-" TODO
-" Makes search act like search in modern browsers
-set incsearch
-
 " TODO
 " For regular expressions turn magic on
 set magic
 
+" TODO This may be managed by a plugin
 " Enable syntax highlighting
 syntax enable
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
-
-" TODO
-" Use Unix as the standard file type
-set ffs=unix,dos,mac
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -60,7 +45,7 @@ set ffs=unix,dos,mac
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
 set nowb
-set noswapfile
+# (added already)set noswapfile
 
 
 " Return to last edit position when opening files (You want this!)
