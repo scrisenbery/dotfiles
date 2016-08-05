@@ -1,5 +1,3 @@
-" Enable filetype detection
-filetype plugin indent on
 
 " TODO This may be managed by a plugin
 set autoindent
@@ -12,9 +10,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 
-" Enable filetype plugins
-filetype plugin on
-filetype indent on
 
 " TODO
 " :W sudo saves the file 
