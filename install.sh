@@ -37,6 +37,4 @@ then
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-# //TODO NOOOOOOOOOOOOOOOOWHY
-# Install npm "global" modules
-npm install
+# //TODO break out installs into setup
