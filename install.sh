@@ -21,7 +21,7 @@ copy_file() {
   fi
 }
 
-for i in config.d/_*
+for i in ${PWD}/config.d/_*
 do
   copy_file $i
 done
