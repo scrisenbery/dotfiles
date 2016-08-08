@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -ev
 # //TODO Update for issue #2
 # Make symbolic links to home folder
 copy_file() {
@@ -26,9 +26,6 @@ do
   copy_file $i
 done
 
-
-# //TODO wat do
-set -ev
 
 # here we go and iterate over all the shell scripts in the install.d file and run them
 for file in ${PWD}/setup.d/*.sh; do
