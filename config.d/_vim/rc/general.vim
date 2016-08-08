@@ -10,11 +10,14 @@ set exrc                     " Enable per-directory .vimrc
 set fileformats=unix,mac,dos " Automatic end-of-file format detection
 set hidden                   " Switch between buffers without saving
 set history=1000             " Number of command lines to remember
+set encoding=utf8            " Ensures default file encoding is UTF8; overwritten by fileencoding
 
 "
 " Backup / Swap files
 "
 set noswapfile
+set nobackup
+set nowritebackup
 
 "
 " Search / Replace

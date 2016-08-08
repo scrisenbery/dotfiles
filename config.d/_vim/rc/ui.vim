@@ -1,15 +1,12 @@
-" //TODO Review all of this (although it looks like most if not all of this is
-" good 
 
 colorscheme wombat256mod
 
 "
 " User Input
 "
-"Maloy uses an if to determine if a mouse is present. I will have to check if
-"he does this in such a way that it will detect a trackpad built in. That'd be
-"the better way to go if it works. TODO
-set mouse=a                                 " Always enable mouse
+if has('mouse')
+  set mouse=a
+endif                                       " Enable mouse if vim binary supports it
 set mousehide                               " Hide when characters are typed
 set ttyfast                                 " Assume fast terminal connection
 
@@ -53,19 +50,12 @@ set showmatch
 set matchtime=2
 
 "
-" Folds
-"
-" TODO I don't usually use this in vim
-set foldenable
-set foldmethod=syntax
-set foldlevelstart=99
-
-"
 " Line formatting
 "
 set nowrap                                  " Line wrapping off
 set linebreak                               " Don't wrap in the middle of a word
 set scrolloff=5                             " Keep 5 lines visible (top/bottom) for scope
+set autoindent
 
 "
 " Messages, Info & Status
@@ -85,3 +75,10 @@ set ruler                                   " Display position in the file
 "
 set listchars=tab:\|\ ,trail:.,extends:>,precedes:<,nbsp:.
 set list
+
+
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
