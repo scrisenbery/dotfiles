@@ -24,22 +24,17 @@ plugins=(git vi-mode brew)
 source $ZSH/oh-my-zsh.sh
 
 # //TODO See if this is needed
-# //TODO Combine with $HOME/bin if the gmac needs it (probably best to keep the dot though in the $HOME dir)
 # Bin provided in dotfiles
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.bin/mac:$PATH"
 export PATH="$HOME/homebrew/bin:$PATH"
-
-# //TODO almost certainly don't need this
-# Bin from dotfiles/node_modules/.bin
-export PATH="$(ls -l ~/.zshrc | cut -f2- -d'>' | awk '{gsub(/^ +| +$/,"")} {print $0}' | awk '{gsub(/_zshrc$/,"node_modules/.bin")} {print $0}'):$PATH"
 
 # //TODO ???
 # Private variables to set IE:
 # - HOMEBREW_GITHUB_API_TOKEN
 #source ~/.zsh-config/zshrc_private
 
-# //TODO wat do
+# Vi mode rather than Emacs
 # VI Command Line
 bindkey -v
 
