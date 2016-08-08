@@ -1,12 +1,10 @@
-" //TODO Review Neobundle vs Vundle vs whatever and review/update/replace this
-
 " Load all the plugins automatically on startup
 filetype off
 filetype plugin indent off
 
 " TODO
 " Increase timeout for YouCompleteMe
-let g:neobundle#install_process_timeout=300
+"let g:neobundle#install_process_timeout=300
 
 
 if has('vim_starting')
@@ -41,4 +39,3 @@ filetype plugin indent on    " required
 
 syntax on
 
-NeoBundleCheck
