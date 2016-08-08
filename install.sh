@@ -12,7 +12,7 @@ copy_file() {
     if [ ! -d $target ] ; then
       echo "Update\t$target"
       # //TODO This is backing up the original file if it exists. Need to store in a more specific location I think
-      mv $target .dotbak/$target.bak
+      mv $target ${HOME}/.dotbak/$target.bak
       cp ${source} ${target}
     fi
   else
