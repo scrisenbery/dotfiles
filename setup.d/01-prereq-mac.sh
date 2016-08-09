@@ -5,13 +5,12 @@
 # Keep-alive: update existing sudo time stamp if set, otherwise do nothing.
  while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# //TODO Not sure how this ensures xcode? Will it need to be managed out of dotfiles?
-# make sure we have xcode...homebrew requires
 if test ! $(which brew); then
    echo "Installing homebrew..."
    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
-# //TODO update path for gmac
+
+# //TODO update path for gmac branch
 # Ask for the administrator password upfront.
 sudo -v
 
