@@ -1,5 +1,4 @@
 #!/bin/ bash
-# Ignore if we're not on OSX
 
 # //TODO Review, wtf is this
 
