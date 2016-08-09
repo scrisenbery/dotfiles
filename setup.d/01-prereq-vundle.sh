@@ -1,4 +1,4 @@
-#!
+#! /bin/sh
 # Vim Package Manager Install
 
 echo "--------"

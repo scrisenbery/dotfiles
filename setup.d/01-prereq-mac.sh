@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+
 # Ignore if we're not on OSX
 [[ "$OSTYPE" =~ ^darwin ]] || exit 0
 
