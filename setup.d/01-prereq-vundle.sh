@@ -1,6 +1,12 @@
-# //TODO vim package manager decision 
+#!
 # Vim Package Manager Install
-if [ ! -d $HOME/.vim/bundle/neobundle.vim ]
+INSTALLING="Vundle"
+
+echo "--------"
+echo "Installing " + $INSTALLING
+echo "--------"
+
+if [ ! -d $HOME/.vim/bundle/Vundle.vim ]
 then
-  git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
