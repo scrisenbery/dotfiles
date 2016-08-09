@@ -18,7 +18,4 @@ else
 fi
 
 open "$HOME/Applications/Alfred\ 2.app"
-# Clone our personal junk
-git clone git@bitbucket.org:Juxtaposedwords/resume.git $HOME/Documents/Personal/resume
-git clone git@github.com:Juxtaposedwords/ansible-rbenv.git $HOME/Documents/Personal/Development/ansible-rbenv
 
