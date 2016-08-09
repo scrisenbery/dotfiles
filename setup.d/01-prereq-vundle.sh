@@ -1,9 +1,8 @@
 #!
 # Vim Package Manager Install
-INSTALLING="Vundle"
 
 echo "--------"
-echo "Installing " + $INSTALLING
+echo "Installing Vundle"
 echo "--------"
 
 if [ ! -d $HOME/.vim/bundle/Vundle.vim ]
