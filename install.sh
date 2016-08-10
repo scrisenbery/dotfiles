@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ev
 # //TODO Update for issue #2
-# Copy to home folder
+# Copy config.d files to home directory
 copy_file() {
   source="${PWD}/$1"
   target="${HOME}/${1/_/.}"
@@ -11,7 +11,7 @@ copy_file() {
   if [ -e $target ] ; then
     if [ ! -d $target ] ; then
       echo "Update\t$target"
-      # //TODO This is backing up the original file if it exists. Need to store in a more specific location I think
+      #Backup original files if they exist
       mv $target ${HOME}/.dotbak/$target.bak
       cp ${source} ${target}
     fi
@@ -27,7 +27,7 @@ do
 done
 
 
-# here we go and iterate over all the shell scripts in setup.d and run them
+# Iterate over all the shell scripts in setup.d and run them
 for file in ${PWD}/setup.d/*.sh; do
   bash $file
 done
