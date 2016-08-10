@@ -5,14 +5,24 @@ set -ev
 copy_file() {
   source="${PWD}/$1"
   target="${HOME}/${1/_/.}"
+  # //TODO TEST
+  backup=${HOME}/$(basename "${target}")
+  targetbase=$(basename "${target}")
 
-  mkdir ${HOME}/.dotbak/
+  mkdir ${HOME}/.dotbak
 
   if [ -e $target ] ; then
     if [ ! -d $target ] ; then
       echo "Update\t$target"
       #Backup original files if they exist
-      mv $target ${HOME}/.dotbak/$target.bak
+      mv $target ${HOME}/.dotbak/$targetbase.bak
+      cp ${source} ${target}
+    fi
+  elif [ -e $backup ] ; then
+    if [ ! -d $backup ] ; then
+      echo "Update\t$backup"
+      #Backup original files if they exist in HOME dir even if dotfiles locates them elsewhere
+      mv $backup ${HOME}/.dotbak/$targetbase.bak
       cp ${source} ${target}
     fi
   else
