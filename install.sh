@@ -11,7 +11,6 @@ link_file() {
   # //TODO Will PWD work as intended here?
   source="${PWD}/$1"
   target="${HOME}/${1/_/.}"
-  # //TODO TEST
   backup=${HOME}/$(basename "${target}")
   targetbase=$(basename "${target}")
 
