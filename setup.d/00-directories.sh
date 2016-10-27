@@ -1,2 +1,6 @@
 #!/bin/sh
-mkdir -p $HOME/Google\ Drive
+
+# //TODO Add comments
+# //TODO Add debug output
+mkdir -pv $HOME/Google\ Drive
+mkdir -pv $HOME/projects
