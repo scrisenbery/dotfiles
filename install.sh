@@ -1,8 +1,13 @@
 #!/bin/bash
+
+# set is a bash built-in command to manage bash options: https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
+# -e = Exit immediately on non-zero status
+# -v = Print shell input lines as they are read
 set -ev
+
 # //TODO Update for issue #2
-# Copy config.d files to home directory
-copy_file() {
+# Symlink config.d files to home directory
+link_file() {
   # //TODO Will PWD work as intended here?
   source="${PWD}/$1"
   target="${HOME}/${1/_/.}"
@@ -12,12 +17,13 @@ copy_file() {
 
   mkdir ${HOME}/.dotbak
 
+  # //TODO Refactor to avoid repeating ln command
   if [ -e $target ] ; then
     if [ ! -d $target ] ; then
       echo "Update\t$target"
       #Backup original files if they exist
       mv $target ${HOME}/.dotbak/$targetbase.bak
-      cp ${source} ${target}
+      ln -siv ${source} ${target}
     fi
   elif [ -e $backup ] ; then
     if [ ! -d $backup ] ; then
@@ -25,17 +31,20 @@ copy_file() {
       #Backup original files if they exist in HOME dir even if dotfiles locates them elsewhere
       # //TODO Will this work for subdirectory-located files?
       mv $backup ${HOME}/.dotbak/$targetbase.bak
-      cp ${source} ${target}
+      # -s = symbolic link
+      # -i prompts the user in case of conflicts. These should be prevented by the backup process.
+      # -v for verbose output. This is likely temporary for testing purposes.
+      ln -siv ${source} ${target}
     fi
   else
     echo "Install\t$target"
-    cp ${source} ${target}
+    ln -siv ${source} ${target}
   fi
 }
 
 for i in ${PWD}/config.d/_*
 do
-  copy_file $i
+  link_file $i
 done
 
 # //TODO Add debug output
