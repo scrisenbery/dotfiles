@@ -7,10 +7,9 @@ Additionally, since there are two different dotfiles repositories that I have co
 I figured the smart path is to draw inspiration from the best fatures of each while cutting out some of the things that I don't like about each.
 Since I want to start from scratch without having an upstream and having to delete stuff out of it, and since there are (at least) two influencing repositories involved,
 I am not forking either of them, but I would like to heavily credit them here:
-mtscout6/dotfiles
-Juxtaposedwords/dotfiles
+* [mtscout6/dotfiles](https://github.com/mtscout6/dotfiles "mtscout6/dotfiles")
+* [Juxtaposedwords/dotfiles](https://github.com/Juxtaposedwords/dotfiles "Juxtaposedwords/dotfiles")
 
-[TODO] Add URLs
 
 ####Branches
 
