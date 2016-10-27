@@ -17,6 +17,8 @@ sudo -v
 
 brew doctor
 
+# //TODO Add debug output
+# //TODO Add comments
 # Setup Homebrew Cask.
 brew tap caskroom/cask
 brew install brew-cask
@@ -24,19 +26,11 @@ brew tap caskroom/versions
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/services
-brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
-
-# //TODO Duplicate from above?
-# Install more recent versions of some OS X tools
-brew tap homebrew/dupes
-
-# //TODO Duplicate from above?
-# Upgrade any already-installed formulae.
 brew upgrade
-
-# //TODO Duplicate from above?
-# Make sure we’re using the latest Homebrew.
 brew update
+brew upgrade brew-cask
+brew cleanup
+brew cask cleanup
 
 
 # //TODO this whole damn thing
