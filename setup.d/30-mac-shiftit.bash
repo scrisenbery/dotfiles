@@ -1,7 +1,6 @@
 #!/bin/bash
 # Ignore if we're not on OSX
 [[ "$OSTYPE" =~ ^darwin ]] || exit 0
-# //TODO
 
 # //TODO Explore if I can update the hotkeys during setup
 open ~/Applications/ShiftIt.app
