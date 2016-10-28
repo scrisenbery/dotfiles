@@ -47,9 +47,6 @@ brew cask install vlc
 
 # Work stuff
 brew install net-snmp
-brew cask install wireshark
-# //TODO
-brew install --HEAD node-build
 
 
 # Remove outdated versions from the cellar.
