@@ -17,5 +17,6 @@ else
   git reset --hard origin/master
 fi
 
+# //TODO make sure to update to Alfred 3 --- also make sure Alfred is installed before this
 open "$HOME/Applications/Alfred\ 2.app"
 
