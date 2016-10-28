@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# //TODO review
-
 # Ignore if we're not on OSX
 [[ "$OSTYPE" =~ ^darwin ]] || exit 0
 
