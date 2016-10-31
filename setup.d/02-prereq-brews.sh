@@ -33,12 +33,3 @@ brew install wget
 
 # Remove outdated versions from the cellar.
 brew cleanup
-
-# //TODO this whole damn thing
-
-LOCALBASH="/usr/local/bin/bash"
-if ! grep -q $LOCALBASH /etc/shells; then
-  echo $LOCALBASH | sudo tee -a /etc/shells
-  sudo chsh -s $LOCALBASH $USER
-fi
-
