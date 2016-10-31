@@ -52,5 +52,3 @@ brew install net-snmp
 
 # Remove outdated versions from the cellar.
 brew cleanup
-
-# //TODO this whole damn thing
