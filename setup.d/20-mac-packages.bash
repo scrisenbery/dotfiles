@@ -33,6 +33,7 @@ brew install htop
 
 # Install some recreational stuff
 brew install terminal-notifier
+brew install lastpass-cli
 
 # This will install all the stuff we need for reasons
 brew cask install google-chrome
