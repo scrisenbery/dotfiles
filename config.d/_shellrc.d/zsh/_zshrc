@@ -34,6 +34,10 @@ export PATH="$HOME/homebrew/bin:$PATH"
 # - HOMEBREW_GITHUB_API_TOKEN
 #source ~/.zsh-config/zshrc_private
 
+# //TODO Review that path
+export HOMEBREW_CASK_OPTS="--caskroom=/hombrew-cask/Caskroom"
+
+
 # Vi mode rather than Emacs
 # Vi Command Line
 bindkey -v
