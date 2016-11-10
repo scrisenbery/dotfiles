@@ -33,6 +33,7 @@ brew install htop
 
 # Install some recreational stuff
 brew install terminal-notifier
+brew install lastpass-cli
 
 # This will install all the stuff we need for reasons
 brew cask install google-chrome
@@ -51,11 +52,3 @@ brew install net-snmp
 
 # Remove outdated versions from the cellar.
 brew cleanup
-
-# //TODO this whole damn thing
-
-LOCALBASH="/usr/local/bin/bash"
-if ! grep -q $LOCALBASH /etc/shells; then
-  echo $LOCALBASH | sudo tee -a /etc/shells
-  sudo chsh -s $LOCALBASH $USER
-fi

@@ -32,14 +32,6 @@ brew upgrade brew-cask
 brew cleanup
 brew cask cleanup
 
-
-# //TODO this whole damn thing
-
-LOCALBASH="/usr/local/bin/bash"
-if ! grep -q $LOCALBASH /etc/shells; then
-  echo $LOCALBASH | sudo tee -a /etc/shells
-  sudo chsh -s $LOCALBASH $USER
-fi
-
+# //TODO
 # Move /usr/local/bin to the top of the path
 sudo sed -ie  '/^\/usr\/local\/bin/!H;//p;$!d;g;s/\n//' /etc/paths
