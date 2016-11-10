@@ -1,4 +1,4 @@
-alias ls="ls --color"
+alias ls="ls -G"
 
 # //TODO This doesn't appear to work
 # Determine if port is in use
