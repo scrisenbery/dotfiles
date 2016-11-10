@@ -1,5 +1,5 @@
 ; vim: ft=gitconfig
-
+; //TODO
 [user]
   name = Scott Crisenbery
   email = scott@scrisenbery.net
