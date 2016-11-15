@@ -12,6 +12,8 @@ if test ! $(which brew); then
 fi
 
 # //TODO update path for gmac branch
+#This should be managed through env vars, see also zshrc
+
 # Ask for the administrator password upfront.
 sudo -v
 
