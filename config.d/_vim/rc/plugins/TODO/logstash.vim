@@ -1,1 +1,0 @@
-Plugin 'robbles/logstash.vim'
