@@ -1,2 +1,0 @@
-# //TODO Review all of this (although I suspect a lot of it is stuff I want to keep)
-# //TODO Review settings for vim airline specifically
