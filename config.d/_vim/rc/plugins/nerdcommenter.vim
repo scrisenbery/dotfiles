@@ -1,2 +1,2 @@
 Plugin 'scrooloose/nerdcommenter'
-" //TODO Review settings and commands
+" https://github.com/scrooloose/nerdcommenter
