@@ -15,10 +15,11 @@ set encoding=utf8            " Ensures default file encoding is UTF8; overwritte
 "
 " Backup / Swap files
 "
-" //TODO fix for crontab
+" //TODO Check nobackup/nowritebackup
 set noswapfile
-set nobackup
-set nowritebackup
+"set nobackup
+"set nowritebackup
+set backupskip=/tmp/*,/private/tmp/*
 
 "
 " Search / Replace
