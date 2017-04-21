@@ -14,20 +14,19 @@ link_file() {
   backup=${HOME}/$(basename "${target}")
   targetbase=$(basename "${target}")
 
-  mkdir ${HOME}/.dotbak
 
   if [ -e $target ] ; then
     if [ ! -d $target ] ; then
       echo "Update\t$target"
       #Backup original files if they exist
-      mv $target ${HOME}/.dotbak/$targetbase.bak
+#      mv $target ${HOME}/.dotbak/$targetbase.bak
     fi
   elif [ -e $backup ] ; then
     if [ ! -d $backup ] ; then
       echo "Update\t$backup"
       #Backup original files if they exist in HOME dir even if dotfiles locates them elsewhere
       # //TODO Will this work for subdirectory-located files?
-      mv $backup ${HOME}/.dotbak/$targetbase.bak
+#      mv $backup ${HOME}/.dotbak/$targetbase.bak
     fi
   else
     echo "Install\t$target"
@@ -36,9 +35,18 @@ link_file() {
   # -s = symbolic link
   # -i prompts the user in case of conflicts. These should be prevented by the backup process.
   # -v for verbose output. This is likely temporary for testing purposes.
-  ln -siv ${source} ${target}
+#  ln -siv ${source} ${target}
 
 }
+
+#Make directory for backing up existing dotfiles to prevent overwrites
+backupdir="${HOME}/.dotbak"
+# //TODO look at cleaning up vars here and in link_file()
+if [[ ! -e $backupdir ]]; then
+    mkdir $backupdir
+elif [[ ! -d $backupdir ]]; then
+    echo "$backupdir already exists but is not a directory" 1>&2
+fi
 
 for i in ${PWD}/config.d/_*
 do
@@ -47,8 +55,10 @@ done
 
 # //TODO Add debug output
 
+# //TODO Delete backup dir if nothing was backed up
+
 # Iterate over all the shell scripts in setup.d and run them
-for file in ${PWD}/setup.d/*.sh; do
-  bash $file
-done
+#for file in ${PWD}/setup.d/*.sh; do
+#  bash $file
+#done
 
