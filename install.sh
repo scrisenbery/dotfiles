@@ -59,13 +59,16 @@ for i in _*
 do
   link_file $i
 done
-
+cd ../setup.d
 # //TODO Add debug output
 
 # //TODO Delete backup dir if nothing was backed up
 
 # Iterate over all the shell scripts in setup.d and run them
-#for file in ${PWD}/setup.d/*.sh; do
-#  bash $file
+#for file in *.sh; do
+#  /bin/sh $file
+
+/bin/sh 01-prereq-homebrew.sh
+/bin/sh 02-prereq-brews.sh
 #done
 
