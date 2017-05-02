@@ -1,7 +1,7 @@
 #!/bin/sh
-# It's doing a sed replacement. Given file path 'i' replace any _ with .
 
-for i in ${PWD}/config.d/_*
+cd config.d
+for i in _*
 do
   rm -rf "${HOME}/${i/_/.}"
 done

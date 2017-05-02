@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # set is a bash built-in command to manage bash options: https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 # -e = Exit immediately on non-zero status
@@ -14,19 +14,25 @@ link_file() {
   backup=${HOME}/$(basename "${target}")
   targetbase=$(basename "${target}")
 
+  echo "Source is ${source}"
+  echo "Target is ${target}"
+  echo "Backup is ${backup}"
+  echo "Basename is ${targetbase}"
+
+
 
   if [ -e $target ] ; then
     if [ ! -d $target ] ; then
       echo "Update\t$target"
       #Backup original files if they exist
-#      mv $target ${HOME}/.dotbak/$targetbase.bak
+      mv $target ${HOME}/.dotbak/$targetbase.bak
     fi
   elif [ -e $backup ] ; then
     if [ ! -d $backup ] ; then
       echo "Update\t$backup"
       #Backup original files if they exist in HOME dir even if dotfiles locates them elsewhere
       # //TODO Will this work for subdirectory-located files?
-#      mv $backup ${HOME}/.dotbak/$targetbase.bak
+      mv $backup ${HOME}/.dotbak/$targetbase.bak
     fi
   else
     echo "Install\t$target"
@@ -35,7 +41,7 @@ link_file() {
   # -s = symbolic link
   # -i prompts the user in case of conflicts. These should be prevented by the backup process.
   # -v for verbose output. This is likely temporary for testing purposes.
-#  ln -siv ${source} ${target}
+  ln -siv ${source} ${target}
 
 }
 
@@ -48,7 +54,8 @@ elif [[ ! -d $backupdir ]]; then
     echo "$backupdir already exists but is not a directory" 1>&2
 fi
 
-for i in ${PWD}/config.d/_*
+cd config.d
+for i in _*
 do
   link_file $i
 done
