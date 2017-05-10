@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Ignore if we're not on OSX
 [[ "$OSTYPE" =~ ^darwin ]] || exit 0
@@ -7,10 +7,10 @@
 defaults write com.apple.Dock autohide-delay -float 0.1
 defaults write com.apple.dock autohide-time-modifier -float 0.5
 
-#
+#Set tile size
 defaults write com.apple.dock largesize -float 150.000000
 
-#
+#Show active apps only (//TODO this may be why I've had issues with keeping apps in my dock previously)
 defaults write com.apple.dock static-only -bool TRUE; 
 
 #Automatically hide and show the Dock
