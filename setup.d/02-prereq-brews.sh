@@ -18,16 +18,16 @@ sudo -v
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install zsh
+brew install zsh # //TODO
 brew install tmux
-brew install vim --override-system-vi # //TODO I seem to recall this was deprecated
-brew install git
-brew install bash
+brew install vim --with-override-system-vi # //TODO
+brew install git # //TODO
+brew install bash # //TODO
 
 
 brew install bash-completion2
 brew install reattach-to-user-namespace
-brew install the-silver-searcher
+brew install the_silver_searcher
 brew install wget
 
 
