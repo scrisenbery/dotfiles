@@ -35,6 +35,7 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
 # Disable the crash reporter
+# //TODO errored here, could not write domain, needed sudo, confirm main install script provides that
 defaults write com.apple.CrashReporter DialogType -string "none"
 
 # Restart automatically if the computer freezes
