@@ -68,7 +68,7 @@ cd ../setup.d
 #for file in *.sh; do
 #  /bin/sh $file
 
-/bin/sh 01-prereq-homebrew.sh
-/bin/sh 02-prereq-brews.sh
+#/bin/sh 01-prereq-homebrew.sh
+#/bin/sh 02-prereq-brews.sh
 #done
 
