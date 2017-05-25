@@ -2,25 +2,27 @@
 filetype off
 filetype plugin indent off
 
-" TODO
-" Increase timeout for YouCompleteMe
-"let g:neobundle#install_process_timeout=300
-
-
 if has('vim_starting')
+  " Not vi-compatible
   set nocompatible
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+  " Set the runtime path to include Vundle
+  set runtimepath+=~/.vim/bundle/Vundle.vim/
+  " Add to runtime path so it can be called later and grab all files
   set runtimepath+=~/.vim/rc/plugins/
 endif
 
-" set the runtime path to include Vundle and initialize
-" TODO set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Initialize and specify where Vundle should install plugins
+call vundle#begin(expand('~/.vim/bundle/'))
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+" Source all files from plugins dir
+" Allows me to keep each plugin in its own file, which is great for plugins
+" which have settings that need to be managed also
+runtime! rc/plugins/*.vim
+
+" Ref: https://github.com/mtscout6/dotfiles/blob/master/_vim/rc/plugins.vim
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -38,4 +40,3 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax on
-
