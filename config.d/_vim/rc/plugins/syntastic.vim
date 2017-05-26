@@ -1,4 +1,4 @@
-NeoBundle 'scrooloose/syntastic'
+Bundle 'scrooloose/syntastic'
 
 " Syntastic Settings
 " These are the recommended default settings
