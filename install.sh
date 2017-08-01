@@ -63,6 +63,7 @@ cd ../setup.d
 # //TODO Add debug output
 
 # //TODO Delete backup dir if nothing was backed up
+## if (backup dir empty) { rmdir $backupdir } [should consider permissions and errors]
 
 # Iterate over all the shell scripts in setup.d and run them
 #for file in *.sh; do
