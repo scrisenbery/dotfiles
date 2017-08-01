@@ -23,10 +23,12 @@ plugins=(brew vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-# //TODO See if this is needed
+# //TODO Review $PATH to check order
 # Bin provided in dotfiles
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.bin/mac:$PATH"
+
+# Homebrew bin path
 export PATH="$HOME/homebrew/bin:$PATH"
 
 # //TODO ???
@@ -44,7 +46,7 @@ bindkey -v
 
 # //TODO
 # SSH Agent Setup
-source ~/shellrc.d/.zsh/.zsh-config/ssh-agent
+# source ~/shellrc.d/.zsh/.zsh-config/ssh-agent
 
 # //TODO for gmac branch only (at this point)
 # The next line updates PATH for the Google Cloud SDK.
