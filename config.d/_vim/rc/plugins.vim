@@ -20,9 +20,9 @@ Plugin 'VundleVim/Vundle.vim'
 " Source all files from plugins dir
 " Allows me to keep each plugin in its own file, which is great for plugins
 " which have settings that need to be managed also
+" Ref: https://github.com/mtscout6/dotfiles/blob/master/_vim/rc/plugins.vim
 runtime! rc/plugins/*.vim
 
-" Ref: https://github.com/mtscout6/dotfiles/blob/master/_vim/rc/plugins.vim
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
