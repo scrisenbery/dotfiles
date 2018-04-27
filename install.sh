@@ -65,11 +65,15 @@ cd ../setup.d
 # //TODO Delete backup dir if nothing was backed up
 ## if (backup dir empty) { rmdir $backupdir } [should consider permissions and errors]
 
+
+# TEST - Update path to include Homebrew
+export PATH="$HOME/homebrew/bin:$PATH"
+
 # Iterate over all the shell scripts in setup.d and run them
-#for file in *.sh; do
-#  /bin/sh $file
+for file in *.sh; do
+  /bin/sh $file
 
 #/bin/sh 01-prereq-homebrew.sh
 #/bin/sh 02-prereq-brews.sh
-#done
+done
 
