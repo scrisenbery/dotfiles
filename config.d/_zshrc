@@ -27,6 +27,7 @@ source $ZSH/oh-my-zsh.sh
 # Bin provided in dotfiles
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.bin/mac:$PATH"
+export PATH="$HOME/.bin/apache-maven-3.5.2/bin:$PATH"
 
 # Homebrew bin path
 export PATH="$HOME/homebrew/bin:$PATH"
@@ -35,9 +36,6 @@ export PATH="$HOME/homebrew/bin:$PATH"
 # Private variables to set IE:
 # - HOMEBREW_GITHUB_API_TOKEN
 #source ~/.zsh-config/zshrc_private
-
-# //TODO Review that path
-export HOMEBREW_CASK_OPTS="--caskroom=/hombrew-cask/Caskroom"
 
 
 # Vi mode rather than Emacs
