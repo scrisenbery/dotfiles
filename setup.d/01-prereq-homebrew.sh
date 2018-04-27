@@ -38,12 +38,10 @@ brew analytics off
 # //TODO Add comments
 # Setup Homebrew Cask.
 brew tap caskroom/cask
-brew install brew-cask
 brew tap caskroom/versions
 brew tap homebrew/services
 brew upgrade
 brew update
-brew upgrade brew-cask
 brew cleanup
 brew cask cleanup
 
