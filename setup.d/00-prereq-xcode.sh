@@ -14,6 +14,8 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
   echo "Once XCode setup is complete, enter your administrator password:"
 
   sudo -v
-
+ 
+  # TEST Received error tesing on new machine which instructs to run this command
+  sudo xcodebuild -license accept
 fi
 
