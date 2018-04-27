@@ -20,9 +20,9 @@ brew update
 
 brew install zsh # //TODO
 brew install tmux
-brew install vim --with-override-system-vi # //TODO
-brew install git # //TODO
-brew install bash # //TODO
+#brew install vim --with-override-system-vi # //TODO
+#brew install git # //TODO
+#brew install bash # //TODO
 
 
 brew install bash-completion2
