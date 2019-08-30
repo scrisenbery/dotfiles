@@ -19,7 +19,7 @@ done
 
 # Oh-My-Zsh Plugins
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
-plugins=(brew vi-mode)
+plugins=(brew vi-mode kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
