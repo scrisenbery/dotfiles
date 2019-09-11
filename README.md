@@ -10,13 +10,3 @@ I am not forking either of them, but I would like to heavily credit them here:
 * [mtscout6/dotfiles](https://github.com/mtscout6/dotfiles "mtscout6/dotfiles")
 * [Juxtaposedwords/dotfiles](https://github.com/Juxtaposedwords/dotfiles "Juxtaposedwords/dotfiles")
 
-
-####Branches
-
-I will (likely) maintain multiple branches of this because I have multiple computers and multiple environments where some settings may need to be customized to different environments and some features may need to be removed altogether because of various resitrctions and reasonings [read: because reasons]. I will (try) to maintain a description of each branch below. While the project is intended to work on any Linux or Mac computer with no changes, my specific use cases may require smaller changes.
-
-######master
-I will use the master branch as the all-purpose version that can be installed anyhwere (theoretically).
-
-######gmac
-The gmac branch is the branch designed for my work-issued Macbook Pro.
