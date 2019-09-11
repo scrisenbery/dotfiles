@@ -17,7 +17,7 @@ defaults write com.apple.dock static-only -bool TRUE;
 defaults write com.apple.dock autohide -bool true
 
 #Enable gestures
-defaults write com.apple.dock scroll-to-open -bool TRUE; killall Dock
+#defaults write com.apple.dock scroll-to-open -bool TRUE; killall Dock
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true

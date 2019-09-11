@@ -49,6 +49,7 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 sudo nvram SystemAudioVolume=" "
 
 # Disable local Time Machine snapshots
+# Error on disablelocal argument
 sudo tmutil disablelocal
 
 # Require password for login
@@ -56,7 +57,7 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+#sudo systemsetup -setcomputersleep Off > /dev/null
 
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1

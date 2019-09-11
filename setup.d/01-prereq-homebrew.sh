@@ -8,21 +8,18 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 if test ! $(which brew); then
    echo "Installing homebrew..."
-   # //TODO non-gmac branch Standard install method
    # Ref: https://brew.sh/
-   #  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 
    # Specific directory installation
    # Ref: https://github.com/Homebrew/brew/blob/master/docs/Installation.md#user-content-alternative-installs
-   mkdir -p ~/homebrew
-   curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C ~/homebrew
+   #mkdir -p ~/homebrew
+   #curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C ~/homebrew
 
    # //TODO Add test for afterwards and exit on failed test
 fi
 
-# //TODO update path for gmac branch
-#This should be managed through env vars, see also zshrc
 
 # Cask path managed by $HOMEBREW_CASK_OPTS set in zshrc for gmac
 
@@ -31,8 +28,7 @@ sudo -v
 
 brew doctor
 
-# //TODO Probably gmac only. Also set in zshrc as environment varibale. Ref: http://docs.brew.sh/Analytics.html
-brew analytics off
+#brew analytics off
 
 # //TODO Add debug output
 # //TODO Add comments
@@ -43,7 +39,8 @@ brew tap homebrew/services
 brew upgrade
 brew update
 brew cleanup
-brew cask cleanup
+#Error, command doesn't exist anymore I guess
+#brew cask cleanup
 
 # //TODO
 # Move /usr/local/bin to the top of the path

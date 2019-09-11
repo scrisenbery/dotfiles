@@ -16,6 +16,6 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
   sudo -v
  
   # TEST Received error tesing on new machine which instructs to run this command
-  sudo xcodebuild -license accept
+  #sudo xcodebuild -license accept
 fi
 

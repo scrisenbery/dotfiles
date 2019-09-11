@@ -41,11 +41,11 @@ brew cask install shiftit
 #brew cask install alfred
 #brew cask install google-drive
 #brew cask install skype
-brew cask install slack
+#brew cask install slack
 #brew cask install wireshark
 #brew cask install vlc
 #brew cask install opera
-brew cask install quassel
+#brew cask install quassel
 
 # Work stuff
 #brew install net-snmp

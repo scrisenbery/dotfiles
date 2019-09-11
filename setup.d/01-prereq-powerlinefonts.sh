@@ -1,6 +1,8 @@
 # /bin/sh
 # Install Powerline Fonts
 
+set -v
+
 echo "--------"
 echo "Installing Powerline Fonts"
 echo "--------"

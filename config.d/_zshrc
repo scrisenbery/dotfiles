@@ -29,9 +29,6 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.bin/mac:$PATH"
 export PATH="$HOME/.bin/apache-maven-3.5.2/bin:$PATH"
 
-# Homebrew bin path
-export PATH="$HOME/homebrew/bin:$PATH"
-
 # //TODO ???
 # Private variables to set IE:
 # - HOMEBREW_GITHUB_API_TOKEN
@@ -46,9 +43,8 @@ bindkey -v
 # SSH Agent Setup
 # source ~/shellrc.d/.zsh/.zsh-config/ssh-agent
 
-# //TODO for gmac branch only (at this point)
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/scrisenbery/google-cloud-sdk/path.zsh.inc'
+if [ -f '/Users/scrisenbery/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/scrisenbery/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-source '/Users/scrisenbery/google-cloud-sdk/completion.zsh.inc'
+if [ -f '/Users/scrisenbery/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/scrisenbery/google-cloud-sdk/completion.zsh.inc'; fi

@@ -67,7 +67,7 @@ cd ../setup.d
 
 
 # TEST - Update path to include Homebrew
-export PATH="$HOME/homebrew/bin:$PATH"
+#export PATH="$HOME/homebrew/bin:$PATH"
 
 # Iterate over all the shell scripts in setup.d and run them
 for file in *.sh; do

@@ -3,6 +3,8 @@
 
 # //TODO Add checks for issues? (i.e. vim missing, dotfiles missing, etc)
 
+set -v
+
 echo "--------"
 echo "Installing Vundle"
 echo "--------"
