@@ -1,9 +1,7 @@
 ; vim: ft=gitconfig
-; //TODO make parts of this private
 [user]
   name = Scott Crisenbery
-  email = scott@scrisenbery.net
-
+  email = scrisenbery@users.noreply.github.com
 [github]
   user = scrisenbery
 
