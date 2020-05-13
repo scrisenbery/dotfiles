@@ -23,7 +23,6 @@ Plugin 'VundleVim/Vundle.vim'
 " Ref: https://github.com/mtscout6/dotfiles/blob/master/_vim/rc/plugins.vim
 runtime! rc/plugins/*.vim
 
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
