@@ -32,20 +32,11 @@ brew update
 #brew install htop
 
 # Install some recreational stuff
-brew install terminal-notifier
-brew install lastpass-cli
+#brew install terminal-notifier
 
 # This will install all the stuff we need for reasons
-#brew cask install google-chrome
-brew cask install shiftit
+#brew cask install shiftit
 #brew cask install alfred
-#brew cask install google-drive
-#brew cask install skype
-#brew cask install slack
-#brew cask install wireshark
-#brew cask install vlc
-#brew cask install opera
-#brew cask install quassel
 
 # Work stuff
 #brew install net-snmp

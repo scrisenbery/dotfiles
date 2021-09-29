@@ -33,14 +33,12 @@ brew doctor
 # //TODO Add debug output
 # //TODO Add comments
 # Setup Homebrew Cask.
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew tap homebrew/services
+#brew tap caskroom/cask
+#brew tap caskroom/versions
+#brew tap homebrew/services
 brew upgrade
 brew update
 brew cleanup
-#Error, command doesn't exist anymore I guess
-#brew cask cleanup
 
 # //TODO
 # Move /usr/local/bin to the top of the path

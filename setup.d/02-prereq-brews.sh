@@ -18,7 +18,7 @@ sudo -v
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install zsh # //TODO
+#brew install zsh # //TODO
 brew install tmux
 #brew install vim --with-override-system-vi # //TODO
 #brew install git # //TODO
