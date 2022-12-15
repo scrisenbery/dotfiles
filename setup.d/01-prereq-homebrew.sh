@@ -9,8 +9,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 if test ! $(which brew); then
    echo "Installing homebrew..."
    # Ref: https://brew.sh/
-   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
    # Specific directory installation
    # Ref: https://github.com/Homebrew/brew/blob/master/docs/Installation.md#user-content-alternative-installs
@@ -20,22 +19,15 @@ if test ! $(which brew); then
    # //TODO Add test for afterwards and exit on failed test
 fi
 
-
-# Cask path managed by $HOMEBREW_CASK_OPTS set in zshrc for gmac
-
 # Ask for the administrator password upfront.
 sudo -v
 
 brew doctor
 
-#brew analytics off
+brew analytics off
 
 # //TODO Add debug output
 # //TODO Add comments
-# Setup Homebrew Cask.
-#brew tap caskroom/cask
-#brew tap caskroom/versions
-#brew tap homebrew/services
 brew upgrade
 brew update
 brew cleanup

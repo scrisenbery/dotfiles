@@ -34,12 +34,7 @@ brew update
 # Install some recreational stuff
 #brew install terminal-notifier
 
-# This will install all the stuff we need for reasons
-#brew cask install shiftit
-#brew cask install alfred
-
-# Work stuff
-#brew install net-snmp
+# //TODO terraform, jq, etc
 
 # Remove outdated versions from the cellar.
 brew cleanup
