@@ -8,7 +8,8 @@ else
   echo "oh-my-zsh already installed./n/n"
 fi
 
+# //TODO if OMZ was installed before the script, this breaks the zshrc link
 # Restore .zshrc after OMZ installation
-if [ -e ~/.zshrc.pre-oh-my-zsh ]; then
-  mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
-fi
+# if [ -e ~/.zshrc.pre-oh-my-zsh ]; then
+#   mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
+# fi
