@@ -35,11 +35,6 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.bin/mac:$PATH"
 export PATH="$HOME/.bin/apache-maven-3.5.2/bin:$PATH"
 
-# //TODO ???
-# Private variables to set IE:
-# - HOMEBREW_GITHUB_API_TOKEN
-#source ~/.zsh-config/zshrc_private
-
 
 # Vi mode rather than Emacs
 # Vi Command Line
