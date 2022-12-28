@@ -32,8 +32,8 @@ source $ZSH/oh-my-zsh.sh
 # //TODO Review $PATH to check order
 # Bin provided in dotfiles
 export PATH="$HOME/.bin:$PATH"
-export PATH="$HOME/.bin/mac:$PATH"
-export PATH="$HOME/.bin/apache-maven-3.5.2/bin:$PATH"
+# //TODO find a better solution for this
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
 
 # Vi mode rather than Emacs
