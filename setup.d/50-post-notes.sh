@@ -9,6 +9,7 @@ echo "\n Post-Install Notes"
 echo "-----"
 # General
 echo "General: You may need to restart the machine to reflect OS setting updates"
+echo "General: Set iTerm font to Droid Sans Mono for Powerline, size 13"
 
 echo "-----"
 # Hammerspoon
