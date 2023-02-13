@@ -3,6 +3,8 @@
 # Ignore if we're not on OSX
 [[ "$OSTYPE" =~ ^darwin ]] || exit 0
 
+set -x
+
 # Faster Dock
 defaults write com.apple.Dock autohide-delay -float 0.1
 defaults write com.apple.dock autohide-time-modifier -float 0.5
@@ -20,7 +22,7 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock showhidden -bool true
 
 # Dim hidden apps
-defaults write com.apple.dock showhidden -bool TRUE; killall Dock
+defaults write com.apple.dock showhidden -bool true
 
 # Kill the dock, so that it will restart and all changes should be observed
 killall Dock

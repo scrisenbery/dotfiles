@@ -3,6 +3,8 @@
 # Ignore if we're not on OSX
 [[ "$OSTYPE" =~ ^darwin ]] || exit 0
 
+set -x
+
 # Keep-alive: update existing sudo time stamp if set, otherwise do nothing.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
@@ -22,15 +24,15 @@ brew install hammerspoon --cask
 #brew install coreutils # //TODO
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-#brew install findutils --with-default-names # //TODO
+#brew install findutils # //TODO
 
 # Install more recent versions of some OS X tools and #JustSysAdminThings //TODO
-#brew install gnu-indent --with-default-names
-#brew install gnu-sed --with-default-names
+#brew install gnu-indent
+#brew install gnu-sed
 #brew install gnutls
-#brew install gnu-tar --with-default-names
-#brew install gnu-which --with-default-names
-#brew install grep --with-default-names
+#brew install gnu-tar
+#brew install gnu-which
+#brew install grep
 #brew install gawk
 #brew install tree
 #brew install htop

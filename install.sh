@@ -39,9 +39,10 @@ link_file() {
   fi
 
   # -s = symbolic link
+  # -n = do not follow an existing link
   # -i prompts the user in case of conflicts. These should be prevented by the backup process.
   # -v for verbose output. This is likely temporary for testing purposes.
-  ln -siv ${source} ${target}
+  ln -sniv ${source} ${target}
 
 }
 
