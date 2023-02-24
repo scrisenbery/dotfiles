@@ -41,6 +41,11 @@ brew install hammerspoon --cask
 #brew install terminal-notifier
 
 # //TODO terraform, jq, etc
+# brew install kubectl
+brew install jq
+
+brew tap hashicorp/tap
+brew install hashicorp/tap/packer
 
 # Remove outdated versions from the cellar.
 brew cleanup
