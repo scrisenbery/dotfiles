@@ -46,6 +46,7 @@ brew install jq
 
 brew tap hashicorp/tap
 brew install hashicorp/tap/packer
+#brew install skaffold
 
 # Remove outdated versions from the cellar.
 brew cleanup
