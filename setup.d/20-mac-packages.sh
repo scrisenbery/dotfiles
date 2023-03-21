@@ -46,7 +46,8 @@ brew install jq
 
 brew tap hashicorp/tap
 brew install hashicorp/tap/packer
-#brew install skaffold
+# brew install skaffold
+# brew install derailed/k9s/k9s
 
 # Remove outdated versions from the cellar.
 brew cleanup

@@ -1,7 +1,7 @@
 ; vim: ft=gitconfig
 [user]
-  name = Scott Crisenbery
-  email = scrisenbery@users.noreply.github.com
+	name = scott-crisenbery-ripcord
+	email = 124637516+scott-crisenbery-ripcord@users.noreply.github.com
 [github]
   user = scrisenbery
 
